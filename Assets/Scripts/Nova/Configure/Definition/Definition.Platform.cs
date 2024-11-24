@@ -51,6 +51,10 @@ namespace NovaEngine
             /// </summary>
             public const string OS_MACOS = "macos";
             /// <summary>
+            /// WinPhone操作系统名称
+            /// </summary>
+            public const string OS_WINPHONE = "winphone";
+            /// <summary>
             /// Android操作系统名称
             /// </summary>
             public const string OS_ANDROID = "android";

@@ -105,7 +105,7 @@ namespace NovaEngine
                 ObjectType,
                 ObjectInfo,
                 ClassType,
-                Enumerable,
+                Verbose,
                 Max,
             }
 
@@ -171,9 +171,9 @@ namespace NovaEngine
                                             convertionCallback = _TextFormatConvertionCallback_ClassType,
                                         },
             new TextFormatConvertionInfo {
-                                            parameterType = TextFormatParameterType.Enumerable,
-                                            formatSymbol = "m",
-                                            convertionCallback = _TextFormatConvertionCallback_Enumerable,
+                                            parameterType = TextFormatParameterType.Verbose,
+                                            formatSymbol = "v",
+                                            convertionCallback = _TextFormatConvertionCallback_Verbose,
                                         },
             };
 
@@ -384,11 +384,19 @@ namespace NovaEngine
                 {
                     return GetFullName(methodInfo);
                 }
+                else if (obj is SystemParameterInfo parameterInfo)
+                {
+                    return GetFullName(parameterInfo);
+                }
+                else if (obj is SystemPropertyInfo propertyInfo)
+                {
+                    return GetFullName(propertyInfo);
+                }
 
                 throw new CException("Invalid format convertion class type '{%s}'.", GetFullName(obj.GetType()));
             }
 
-            private static object _TextFormatConvertionCallback_Enumerable(object obj)
+            private static object _TextFormatConvertionCallback_Verbose(object obj)
             {
                 if (null == obj)
                 {

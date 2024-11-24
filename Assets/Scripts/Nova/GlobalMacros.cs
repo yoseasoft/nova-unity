@@ -36,6 +36,16 @@ namespace NovaEngine
     public static class GlobalMacros
     {
         /// <summary>
+        /// 编译配置选项，调试模式
+        /// </summary>
+        public const string BUILD_CONFIGURATION_DEBUG = "DEBUG";
+
+        /// <summary>
+        /// 编译配置选项，发布模式
+        /// </summary>
+        public const string BUILD_CONFIGURATION_RELEASE = "RELEASE";
+
+        /// <summary>
         /// 主版本号，重大变动时更改该值
         /// </summary>
         public const int VERSION_FRAMEWORK_MAJOR = 2;

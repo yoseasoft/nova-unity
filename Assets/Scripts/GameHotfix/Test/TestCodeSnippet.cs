@@ -275,7 +275,7 @@ namespace Game
             dict1.Add(2, "bobo");
             Debugger.Warn("dict1 = {%s}.", NovaEngine.Utility.Text.ToString<int, string>(dict1));
 
-            str = "Could not found object '{{{%d}}}' with target '{%s}' name '{%t}' and type '{%o}', collection is '{%m}' and '{%m}' - '{%m}' added object instance count '{7}' failed!{8}";
+            str = "Could not found object '{{{%d}}}' with target '{%s}' name '{%t}' and type '{%o}', collection is '{%v}' and '{%v}' - '{%v}' added object instance count '{7}' failed!{8}";
             string str2 = NovaEngine.Utility.Text.Format(str, 100, "hello", "good", this, list1, list2, dict1, 99, 101, "hello", 191);
             Debugger.Warn(str2);
         }
