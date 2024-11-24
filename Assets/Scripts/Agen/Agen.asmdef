@@ -1,0 +1,20 @@
+{
+    "name": "Agen",
+    "rootNamespace": "",
+    "references": [
+        "GUID:dcf35d6cccc74394bb71b0bc8cbce1db",
+        "GUID:8e02f8f8496b34d48941c0c59d3cc08a",
+        "GUID:65d9304ef2a93d74eb9698231441ffef"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "GAME_COMPILE || UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

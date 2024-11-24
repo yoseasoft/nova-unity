@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 代码结构配置信息，用于支持反转注入，自动构建等流程 -->
+<code_configure>
+    <!-- 角色类 -->
+    <bean name="game_actor" class_type="Game.Actor" singleton="false" inherited="true">
+        <component reference_name="attributeComponent" activation_on="Initialize"/>
+    </bean>
+    <!-- 士兵类 -->
+    <bean name="soldier" class_type="Game.Soldier" singleton="false">
+        <field name="buff" reference_type="Game.Buff"/>
+        <component reference_type="Game.MoveComponent" activation_on="Initialize"/>
+    </bean>
+    <!--
+    怪物类
+    -->
+    <bean name="monster" class_type="Game.Monster" singleton="false">
+        <component reference_type="Game.MoveComponent" activation_on="Initialize"/>
+    </bean>
+    <bean name="attackComponent" class_type="Game.AttackComponent" singleton="false">
+        <field name="bullet" reference_type="Game.Bullet"/>
+    </bean>
+    <bean name="attributeComponent" class_type="Game.AttributeComponent" singleton="false">
+    </bean>
+</code_configure>

@@ -1,0 +1,25 @@
+{
+    "name": "GameHotfix",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c212aa22632631e4e92d2f38f85ce899",
+        "GUID:ec26710a5411e9648ab2350da31d8ae9",
+        "GUID:8c3d044deed6e7d47868f8bb52ce3735",
+        "GUID:41784a9ad6ac632489b1ef27d472fdea",
+        "GUID:0275d40c58ad070459fe8e2c3e99f443",
+        "GUID:dcf35d6cccc74394bb71b0bc8cbce1db",
+        "GUID:8e02f8f8496b34d48941c0c59d3cc08a",
+        "GUID:65d9304ef2a93d74eb9698231441ffef",
+        "GUID:8c8f9d96103e94a7da84b012fd7e9f13",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
