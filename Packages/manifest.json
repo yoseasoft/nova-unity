@@ -1,5 +1,15 @@
 {
   "dependencies": {
+    "com.code-philosophy.hybridclr": "https://github.com/focus-creative-games/hybridclr_unity.git",
+    "com.novaframework.unity.core.boot": "https://github.com/yoseasoft/com.novaframework.unity.core.boot.git",
+    "com.novaframework.unity.core.configure": "https://github.com/yoseasoft/com.novaframework.unity.core.configure.git",
+    "com.novaframework.unity.fairygui": "https://github.com/yoseasoft/com.novaframework.unity.fairygui.git",
+    "com.novaframework.unity.litjson": "https://github.com/yoseasoft/com.novaframework.unity.litjson.git",
+    "com.novaframework.unity.luban": "https://github.com/yoseasoft/com.novaframework.unity.luban.git",
+    "com.novaframework.unity.protobuf": "https://github.com/yoseasoft/com.novaframework.unity.protobuf.git",
+    "com.novaframework.unity.unitask": "https://github.com/yoseasoft/com.novaframework.unity.unitask.git",
+    "com.yoseasoft.gooasset": "https://github.com/yoseasoft/GooAsset.git",
+    "com.yoseasoft.novaframework": "https://github.com/yoseasoft/NovaFramework.git",
     "com.unity.collab-proxy": "2.7.1",
     "com.unity.ide.rider": "3.0.36",
     "com.unity.ide.visualstudio": "2.0.22",
