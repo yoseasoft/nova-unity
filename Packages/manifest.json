@@ -8,6 +8,7 @@
     "com.novaframework.unity.luban": "https://github.com/yoseasoft/com.novaframework.unity.luban.git",
     "com.novaframework.unity.protobuf": "https://github.com/yoseasoft/com.novaframework.unity.protobuf.git",
     "com.novaframework.unity.unitask": "https://github.com/yoseasoft/com.novaframework.unity.unitask.git",
+    "com.novaframework.unity.sample": "https://github.com/yoseasoft/com.novaframework.unity.sample.git",
     "com.yoseasoft.gooasset": "https://github.com/yoseasoft/GooAsset.git",
     "com.yoseasoft.novaframework": "https://github.com/yoseasoft/NovaFramework.git",
     "com.unity.collab-proxy": "2.7.1",
