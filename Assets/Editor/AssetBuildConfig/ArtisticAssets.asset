@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be00e1bbff27a34ab766b588a4da8db, type: 3}
+  m_Name: ArtisticAssets
+  m_EditorClassIdentifier: 
+  buildAssetBundleOptions: 256
+  groups:
+  - note: "\u573A\u666F"
+    isActive: 1
+    bundleMode: 0
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: 651bfffe933f2384a8f4124a7a4aaead, type: 3}
+    filter: t:Scene
+    isNeedHandleDependencies: 1
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u6A21\u578BPrefab"
+    isActive: 1
+    bundleMode: 4
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: ed0c531202cd10e409331561efd1334a, type: 3}
+    filter: t:Prefab
+    isNeedHandleDependencies: 1
+    externalPath: 
+    searchPattern: prefab*
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u7279\u6548"
+    isActive: 0
+    bundleMode: 1
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: 8b6bf3b339f63654f9cdcaebead9a9c3, type: 3}
+    filter: t:Prefab
+    isNeedHandleDependencies: 1
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u56FE\u7247"
+    isActive: 1
+    bundleMode: 1
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: cea36334f55f926479d5f4a156bcffac, type: 3}
+    filter: t:Texture
+    isNeedHandleDependencies: 1
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u98D8\u8840"
+    isActive: 1
+    bundleMode: 1
+    assetBundleFileName: FloatBlood
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: bc85d9f92f4892c4daff7cbf9edeb9ee, type: 3}
+    filter: t:Prefab
+    isNeedHandleDependencies: 1
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: Shader
+    isActive: 0
+    bundleMode: 2
+    assetBundleFileName: Shader
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: baa39cc339ac36c4e9e2f25b1600ae4f, type: 3}
+    filter: t:ShaderVariantCollection t:Shader
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u89C6\u9891\u64AD\u653E\u9884\u5236"
+    isActive: 0
+    bundleMode: 1
+    assetBundleFileName: VideoPlayer
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: fee4477aadd71b54c926d461be4000ca, type: 3}
+    filter: 't:Prefab '
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u89C6\u9891"
+    isActive: 0
+    bundleMode: 0
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: fee4477aadd71b54c926d461be4000ca, type: 3}
+    filter: t:VideoClip
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0

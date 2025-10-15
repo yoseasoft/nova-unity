@@ -1,0 +1,30 @@
+/// <summary>
+/// 模版生成的场景对象逻辑类，请在描述中说明该场景逻辑的处理内容
+/// 
+/// 创建者：Hurley
+/// 创建时间：xxxx-xx-xx
+/// 功能描述：
+/// </summary>
+
+#ROOTNAMESPACEBEGIN#
+static class #SCRIPTNAME#
+{
+    // static void OnInitialize() { }
+
+    // static void OnStartup() { }
+
+    // static void OnAwake() { }
+
+    // static void OnStart() { }
+
+    // static void OnDestroy() { }
+
+    // static void OnShutdown() { }
+
+    // static void OnCleanup() { }
+
+    // static void OnUpdate() { }
+
+    // static void OnLateUpdate() { }
+}
+#ROOTNAMESPACEEND#

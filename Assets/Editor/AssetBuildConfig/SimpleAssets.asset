@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be00e1bbff27a34ab766b588a4da8db, type: 3}
+  m_Name: SimpleAssets
+  m_EditorClassIdentifier: 
+  buildAssetBundleOptions: 256
+  groups:
+  - note: "\u6253\u5305\u8865\u5145\u5143\u6570\u636E\u4EE3\u7801"
+    isActive: 1
+    bundleMode: 2
+    assetBundleFileName: Aot
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: a4b87c7ebffeec5418f8187b3a73a10a, type: 3}
+    filter: t:TextAsset
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 13000000
+    parentFolderLayer: 0
+  - note: "\u6253\u5305\u4EE3\u7801"
+    isActive: 1
+    bundleMode: 0
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: bc94d8ce134a03d4285c86018f443f46, type: 3}
+    filter: t:TextAsset
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u914D\u7F6E\u8868"
+    isActive: 1
+    bundleMode: 2
+    assetBundleFileName: config
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: 338f66c2cdabcf1498cc59dd1ee1c65f, type: 3}
+    filter: t:TextAsset
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u5B9E\u4F53\u914D\u7F6E"
+    isActive: 1
+    bundleMode: 2
+    assetBundleFileName: bean
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: 5ba11fe29ee6c5240b349ba6f1631aa0, type: 3}
+    filter: t:TextAsset
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "FGUI\u5E03\u5C40"
+    isActive: 1
+    bundleMode: 2
+    assetBundleFileName: fgui_bytes
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: 829a2c97dbd2a4048b8eceea4210af8e, type: 3}
+    filter: t:TextAsset
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "FGUI\u56FE\u7247"
+    isActive: 1
+    bundleMode: 0
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: 829a2c97dbd2a4048b8eceea4210af8e, type: 3}
+    filter: t:Texture
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "FGUI\u97F3\u6548"
+    isActive: 1
+    bundleMode: 0
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: 829a2c97dbd2a4048b8eceea4210af8e, type: 3}
+    filter: t:AudioClip
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u97F3\u6548"
+    isActive: 0
+    bundleMode: 1
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: 1ae1396c1f5591f46a5d9f16315c5f38, type: 3}
+    filter: t:AudioClip
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
+  - note: "\u865A\u62DF\u76F8\u673A\u914D\u7F6E"
+    isActive: 0
+    bundleMode: 1
+    assetBundleFileName: 
+    isExternalPath: 0
+    target: {fileID: 102900000, guid: 3f19baf89e7c6db48becdb03dd9caa33, type: 3}
+    filter: t:Prefab
+    isNeedHandleDependencies: 0
+    externalPath: 
+    searchPattern: 
+    placeFolderName: 
+    buildTargetList: 
+    parentFolderLayer: 0
