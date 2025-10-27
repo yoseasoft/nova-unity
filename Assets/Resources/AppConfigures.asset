@@ -16,5 +16,5 @@ MonoBehaviour:
   logChannel: 0100000002000000
   logUsingCustomColor: 0
   logUsingSystemColor: 1
-  tutorialMode: 1
+  tutorialMode: 0
   tutorialSampleType: 10
