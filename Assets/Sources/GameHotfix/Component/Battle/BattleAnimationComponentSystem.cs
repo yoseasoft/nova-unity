@@ -150,7 +150,7 @@ namespace Game
             TransformComponent transformComponent = actor.GetComponent<TransformComponent>();
 
             Object obj = GameEngine.ResourceHandler.Instance.LoadAsset(eventData.asset_url, typeof(GameObject));
-            GameObject go = go = GameObject.Instantiate(obj, Vector3.zero, Quaternion.identity, self.grids[index].transform) as GameObject;
+            GameObject go = GameObject.Instantiate(obj, Vector3.zero, Quaternion.identity, self.grids[index].transform) as GameObject;
             go.transform.localPosition = transformComponent.position;
             go.transform.localRotation = Quaternion.Euler(transformComponent.rotation);
             self.models.Add(eventData.uid, go);

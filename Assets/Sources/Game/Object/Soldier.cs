@@ -14,8 +14,8 @@ namespace Game
     /// </summary>
     [GameEngine.Inject]
     [GameEngine.PoolSupported]
-    [EntityActivationComponent(typeof(AttributeComponent))]
-    [EntityActivationComponent(typeof(AttackComponent))]
+    [CEntityAutomaticActivationComponent(typeof(AttributeComponent))]
+    [CEntityAutomaticActivationComponent(typeof(AttackComponent))]
     public class Soldier : Actor
     {
         private Buff buff = new();

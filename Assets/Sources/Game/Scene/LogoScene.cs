@@ -7,9 +7,9 @@ namespace Game
     /// <summary>
     /// Logo场景对象类
     /// </summary>
-    [GameEngine.DeclareSceneClass("Logo")]
-    //[GameEngine.EntityActivationComponent(typeof(LogoTimerComponent))]
-    //[GameEngine.EntityActivationComponent(typeof(LogoTransitionCountdownComponent))]
+    [GameEngine.CSceneClass("Logo")]
+    //[GameEngine.CEntityAutomaticActivationComponent(typeof(LogoTimerComponent))]
+    //[GameEngine.CEntityAutomaticActivationComponent(typeof(LogoTransitionCountdownComponent))]
     public sealed class LogoScene : GScene
     {
         // protected override void OnAwake() { }

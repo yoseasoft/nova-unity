@@ -3,7 +3,7 @@ using GameEngine;
 
 namespace Game
 {
-    [DeclareViewClass("LoadingPanel")]
+    [CViewClass("LoadingPanel")]
     public class LoadingPanel : CView
     {
         public GTextField title;

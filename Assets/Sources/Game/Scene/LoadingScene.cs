@@ -7,7 +7,7 @@ namespace Game
     /// <summary>
     /// Loading场景对象类
     /// </summary>
-    [GameEngine.DeclareSceneClass("Loading")]
+    [GameEngine.CSceneClass("Loading")]
     [GameEngine.SceneAutoDisplayOnTargetView("LoadingPanel")]
     public sealed class LoadingScene : GScene
     {

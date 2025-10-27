@@ -6,9 +6,9 @@ namespace Game
     /// 怪物对象类
     /// </summary>
     [GameEngine.Inject]
-    [EntityActivationComponent(typeof(AttributeComponent))]
-    //[EntityActivationComponent(typeof(AttackComponent))]
-    [EntityActivationComponent(typeof(HardHurtComponent))]
+    [CEntityAutomaticActivationComponent(typeof(AttributeComponent))]
+    //[CEntityAutomaticActivationComponent(typeof(AttackComponent))]
+    [CEntityAutomaticActivationComponent(typeof(HardHurtComponent))]
     public class Monster : Actor
     {
         protected override void OnAwake()

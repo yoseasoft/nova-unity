@@ -6,9 +6,9 @@ namespace Game
     /// 角色对象基类
     /// </summary>
     [GameEngine.Inject]
-    [EntityActivationComponent(typeof(IdentityComponent))]
-    [EntityActivationComponent(typeof(TransformComponent))]
-    [EntityActivationComponent(typeof(MoveComponent))]
+    [CEntityAutomaticActivationComponent(typeof(IdentityComponent))]
+    [CEntityAutomaticActivationComponent(typeof(TransformComponent))]
+    [CEntityAutomaticActivationComponent(typeof(MoveComponent))]
     public class Actor : CActor
     {
         public Actor()

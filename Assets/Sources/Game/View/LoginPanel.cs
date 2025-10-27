@@ -3,7 +3,7 @@ using GameEngine;
 
 namespace Game
 {
-    [DeclareViewClass("LoginPanel")]
+    [CViewClass("LoginPanel")]
     public class LoginPanel : CView
     {
         /// <summary>

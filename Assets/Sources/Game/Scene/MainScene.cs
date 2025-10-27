@@ -7,7 +7,7 @@ namespace Game
     /// <summary>
     /// 游戏主场景对象类
     /// </summary>
-    [GameEngine.DeclareSceneClass("Main")]
+    [GameEngine.CSceneClass("Main")]
     public sealed class MainScene : GScene
     {
     }
