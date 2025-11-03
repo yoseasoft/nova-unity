@@ -10,6 +10,15 @@
 
 ## 🚀 快速开始
 
+### 目录结构
+
+下载项目所需文件，包括：  
+1. 基础工程：[nova-unity](https://github.com/yoseasoft/nova-unity)
+1. 配置文件：[nova-unity-commons](https://github.com/yoseasoft/nova-unity-commons)
+1. 转换工具：[nova-unity-tools](https://github.com/yoseasoft/nova-unity-tools)
+
+并将下载的三个资源文件统一解压存放在同一个目录下；
+
 ### 启动方式
 
 1. 下载最新版本
