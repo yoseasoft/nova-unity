@@ -3,6 +3,7 @@
 /// </summary>
 
 using Cysharp.Threading.Tasks;
+using GameEngine;
 
 namespace Game
 {
@@ -16,6 +17,8 @@ namespace Game
         {
             InitUISettings();
             FairyGUI.GRoot.inst.onSizeChanged.Add(InitUISettings);
+
+            GuiHandler.Instance.AddViewGroup("UGuiLevel", 1, ViewFormType.UGUI);
 
             CreateMainUI().Forget();
         }

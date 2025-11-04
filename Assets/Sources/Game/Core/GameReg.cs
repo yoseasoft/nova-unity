@@ -2,10 +2,6 @@
 /// 2023-08-29 Game Framework Code By Hurley
 /// </summary>
 
-using System.Collections;
-using System.IO;
-using System.Text;
-
 namespace Game
 {
     /// <summary>
@@ -23,7 +19,7 @@ namespace Game
             // System.Type[] allTypes = System.Reflection.Assembly.GetExecutingAssembly().GetTypes();
 
             // string assemblyName = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
-            // Debugger.Log("Assembly class name: {0}, total class count: {1}", assemblyName, allTypes.Length);
+            // Debugger.Log("Assembly class name: {%s}, total class count: {%d}", assemblyName, allTypes.Length);
 
             LoadAllConfigures();
 
@@ -68,11 +64,12 @@ namespace Game
                 if (string.IsNullOrEmpty(path))
                     path = @"bean";
 
-                UnityEngine.TextAsset textAsset = GameEngine.ResourceHandler.Instance.LoadAsset($"Assets/_Resources/Bean/{path}.xml", typeof(UnityEngine.TextAsset)) as UnityEngine.TextAsset;
+                string filePath = NovaEngine.Environment.GetSystemPath("BEAN_PROFILE_PATH"); // , $"{path}.xml");
+                UnityEngine.TextAsset textAsset = GameEngine.ResourceHandler.Instance.LoadAsset($"{filePath}/{path}.xml", typeof(UnityEngine.TextAsset)) as UnityEngine.TextAsset;
                 string text = textAsset.text;
-                byte[] buffer = Encoding.UTF8.GetBytes(text);
+                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(text);
                 ms.Write(buffer, 0, buffer.Length);
-                ms.Seek(0, SeekOrigin.Begin);
+                ms.Seek(0, System.IO.SeekOrigin.Begin);
 
                 GameEngine.ResourceHandler.Instance.UnloadAsset(textAsset);
 
@@ -115,7 +112,7 @@ namespace Game
                 System.Reflection.Assembly assembly = NovaEngine.Utility.Assembly.GetAssembly(WaitingLoadAssemblyNames[n]);
                 if (null == assembly)
                 {
-                    Debugger.Error("Could not found any assembly from target name '{0}'.", WaitingLoadAssemblyNames[n]);
+                    Debugger.Error("Could not found any assembly from target name '{%s}'.", WaitingLoadAssemblyNames[n]);
                     continue;
                 }
 
