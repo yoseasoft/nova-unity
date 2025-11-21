@@ -26,6 +26,30 @@ namespace Game
             self.SetListeners();
         }
 
+        [GameEngine.CViewNoticeCall(GameEngine.ViewNoticeType.Resume)]
+        static void OnResume(this LoginPanel self)
+        {
+            Debugger.Info("{%t}处于恢复状态！", self);
+        }
+
+        [GameEngine.CViewNoticeCall(GameEngine.ViewNoticeType.Pause)]
+        static void OnPause(this LoginPanel self)
+        {
+            Debugger.Info("{%t}处于暂停状态！", self);
+        }
+
+        [GameEngine.CViewNoticeCall(GameEngine.ViewNoticeType.Reveal)]
+        static void OnReveal(this LoginPanel self)
+        {
+            Debugger.Info("{%t}处于置顶状态！", self);
+        }
+
+        [GameEngine.CViewNoticeCall(GameEngine.ViewNoticeType.Cover)]
+        static void OnCover(this LoginPanel self)
+        {
+            Debugger.Info("{%t}处于遮挡状态！", self);
+        }
+
         /// <summary>
         /// 设置按钮监听
         /// </summary>
