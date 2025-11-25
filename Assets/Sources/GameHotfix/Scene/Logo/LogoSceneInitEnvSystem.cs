@@ -18,7 +18,7 @@ namespace Game
             InitUISettings();
             FairyGUI.GRoot.inst.onSizeChanged.Add(InitUISettings);
 
-            GuiHandler.Instance.AddViewGroup("UGuiLevel", 1, ViewFormType.UGUI);
+            GuiHandler.Instance.AddViewGroup("UGuiLevel", 1);
 
             CreateMainUI().Forget();
         }
@@ -57,7 +57,7 @@ namespace Game
             Debugger.Log("预加载！");
 
             // 加载通用包
-            await GameEngine.FormHelper.AddCommonPackage("CommonButton");
+            await Game.Module.View.Fairygui.FairyFormHelper.AddCommonPackage("CommonButton");
 
             //FairyGUI.UIObjectFactory.SetPackageItemExtension(DifficultyContent.URL, typeof(DifficultyContent));
             //FairyGUI.UIObjectFactory.SetPackageItemExtension(SymbolCard.URL, typeof(SymbolCard));

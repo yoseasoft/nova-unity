@@ -6,7 +6,7 @@ namespace Game
     /// <summary>
     /// UGUI测试界面
     /// </summary>
-    [CViewClass("ItemChoicePanel", ViewFormType.UGUI)]
+    [CViewClass("ItemChoicePanel")]
     [CViewGroup("UGuiLevel")]
     public class ItemChoicePanel : CView
     {

@@ -3,11 +3,10 @@
 /// </summary>
 
 using System.Collections.Generic;
+using System.Reflection;
 
 using SystemType = System.Type;
 using SystemDelegate = System.Delegate;
-using SystemMethodInfo = System.Reflection.MethodInfo;
-using SystemBindingFlags = System.Reflection.BindingFlags;
 
 namespace Game
 {
@@ -232,7 +231,7 @@ namespace Game
             IDictionary<string, NovaEngine.Definition.Delegate.EmptyFunctionHandler> dict = new Dictionary<string, NovaEngine.Definition.Delegate.EmptyFunctionHandler>();
             foreach (KeyValuePair<string, NovaEngine.Definition.Delegate.EmptyFunctionHandler> pair in _worldObserverNamesMapping)
             {
-                SystemMethodInfo methodInfo = observerType.GetMethod(pair.Key, SystemBindingFlags.Public | SystemBindingFlags.NonPublic | SystemBindingFlags.Static);
+                MethodInfo methodInfo = observerType.GetMethod(pair.Key, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static);
                 if (null == methodInfo)
                 {
                     Debugger.Error("Could not found observer method '{%s}' from static class '{%t}', registed it failed.", pair.Key, observerType);

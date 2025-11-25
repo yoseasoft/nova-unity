@@ -10,14 +10,30 @@ using GooAsset;
 namespace Game
 {
     /// <summary>
-    /// ConfigLoader会扫描所有的有ConfigAttribute标签的配置, 加载进来
+    /// ConfigureLoader会扫描所有的有ConfigAttribute标签的配置, 加载进来
     /// </summary>
-    public static class ConfigLoader
+    public static class ConfigureLoader
     {
+        public static async UniTask Load()
+        {
+            // 加载数据表
+            await LoadAsync();
+        }
+
+        public static void Unload()
+        {
+        }
+
+        public static async void Reload()
+        {
+            // 重新导入配置数据
+            await ReloadAsync();
+        }
+
         /// <summary>
         /// 异步加载所有配置
         /// </summary>
-        public static async UniTask LoadAsync()
+        private static async UniTask LoadAsync()
         {
             List<Asset> configAssets = new();
             IEnumerable<Type> configTypes = GetConfigTableTypes();
@@ -55,7 +71,7 @@ namespace Game
         /// <summary>
         /// 重载配置表
         /// </summary>
-        public static async UniTask ReloadAsync()
+        private static async UniTask ReloadAsync()
         {
             await LoadAsync();
 

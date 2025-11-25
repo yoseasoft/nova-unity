@@ -25,6 +25,10 @@ namespace Game
 
         // protected override void OnCleanup() { }
 
+        // protected override void OnExecute() { }
+
+        // protected override void OnLateExecute() { }
+
         // protected override void OnUpdate() { }
 
         // protected override void OnLateUpdate() { }

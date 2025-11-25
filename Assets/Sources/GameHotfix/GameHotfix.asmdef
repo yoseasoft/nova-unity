@@ -8,9 +8,11 @@
         "Nova.Import",
         "Nova.UniTask",
         "Nova.Luban",
+        "Nova.FairyGUI",
         "Nova.Protobuf",
         "Nova.Protobuf.Extension",
-        "Nova.FairyGUI",
+        "Game.Module.View.Ugui",
+        "Game.Module.View.Fairygui",
         "Agen",
         "Game"
     ],

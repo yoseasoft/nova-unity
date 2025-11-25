@@ -44,7 +44,7 @@ namespace Game
             LogoTransitionCountdownComponent tcc = scene.GetComponent<LogoTransitionCountdownComponent>();
             tcc.StartTransitionCountdown();
 
-            // NE.SceneHandler.ReplaceScene<BattleScene>();
+            //NE.SceneHandler.ReplaceScene<WorldScene>();
         }
 
         [GameEngine.OnEventDispatchCall(typeof(LogoScene), 1201)]

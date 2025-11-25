@@ -61,7 +61,7 @@ namespace Game
             LoadingPanel loadingPanel = (LoadingPanel) await GuiHandler.Instance.OpenUI("LoadingPanel");
             loadingPanel?.StartProgress(0);
 
-            ItemChoicePanel itemChoicePanel = (ItemChoicePanel) await GuiHandler.Instance.OpenUI("ItemChoicePanel");
+            // ItemChoicePanel itemChoicePanel = (ItemChoicePanel) await GuiHandler.Instance.OpenUI("ItemChoicePanel");
 
             //GameObject canvasObject = GameObject.Find("DynamicCanvas");
             //if (null == canvasObject)

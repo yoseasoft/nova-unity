@@ -8,7 +8,7 @@ namespace Game
     /// 世界管理器的观察者实现类
     /// </summary>
     [WorldObserverAutoBound]
-    public static class SimpleWorldObserver
+    public static class SimpleGameWorld
     {
         public static void Startup()
         {
@@ -38,10 +38,9 @@ namespace Game
         public static void LateExecute()
         { }
 
-        private static async void StartGame()
+        private static void StartGame()
         {
-            // 业务数据加载
-            await GameLoader.Load();
+            GameLoader.Load(GameWorldCommandType.Configure);
 
             // 初始加载logo场景
             NE.SceneHandler.ReplaceScene<LogoScene>();
@@ -57,7 +56,7 @@ namespace Game
         /// 世界管理器的观察者实现类
         /// </summary>
         /*
-        public class WorldObserver : IWorldObserver
+        public class SimpleGameWorld : IWorldObserver
         {
             public void Startup() { }
 
